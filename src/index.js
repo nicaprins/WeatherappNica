@@ -27,8 +27,6 @@ function displayWeatherCondition(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#minTemp").innerHTML = response.data.main.temp_min;
   document.querySelector("#maxTemp").innerHTML = response.data.main.temp_max;
-  document.querySelector("#display-comment").innerHTML =
-    response.data.weather[0].main;
   console.log(response.data);
 }
 
